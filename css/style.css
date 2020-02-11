@@ -1,0 +1,113 @@
+/* 59b4a3 */
+/* a5cedf */
+
+* {
+    box-sizing: border-box;
+}
+
+/* nav */
+nav {
+    padding: 10px 0;
+}
+
+h2 {
+    color: #a5cedf;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+    font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
+    color: #555;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #a5cedf;
+}
+
+/* header */
+
+header {
+    background: url(../media/jars.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:center;
+    opacity: .75;
+    margin-bottom: 40px;
+}
+
+.header-content {
+    color: #eee;
+}
+
+.header-box {
+    margin: 50px auto;
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    background: whitesmoke;
+    color: #000;
+    border: 2px solid black;
+    border-radius: 5px;
+    opacity: 80%;
+}
+
+h1 {
+    text-align: center;
+    color: #a5cedf;
+}
+
+.header-box p {
+    text-align: center;
+}
+
+/* footer */
+
+.footer-logo {
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.footer-logo img {
+    margin: 0 auto;
+}
+
+.footer-logo p {
+    text-align: center;
+}
+
+.social-media {
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.social-media img { /* will be links */
+    display: inline;
+}
+
+.subscription {
+    margin: 0 auto;
+    padding: 10px;
+    width: 800px;
+    height: 300px;
+}
+
+.subscribe-box {
+    margin: 5px;
+    padding: 10px;
+    width: 600px;
+    /* height: 250px; */
+    border: 2px solid black;
+    border-radius: 5px;
+}
