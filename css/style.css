@@ -1,17 +1,54 @@
-/* 59b4a3 */
-/* a5cedf */
 
+/* COLORS */
+/* 8db6c7 <------- PRIMARY */
+/* 8fc2bd */
+/* a6b3ab */
+/* 6d517b */
+/* 01015a */
+
+/* FONTS */
+/* font-family (for 'august table' futura maxi std book */
+/* font-family (for 'EVENTS' LTC Twentieth Century Medium Small Caps */
 * {
     box-sizing: border-box;
 }
 
-/* nav */
-nav {
-    padding: 10px 0;
+body {
+    background: url(../media/augustTableBackground.png)
 }
 
+/* nav */
+nav {
+    /* padding: 10px 0; */
+
+    width: 100%; 
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 3;
+    background: url(../media/augustTableBackground.png);
+    margin: 0;
+    padding: 10px 0; 
+}
+
+.home-link {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 48px;
+    /* text-transform: uppercase; */
+    opacity: .50;
+}
+
+.home-link a {
+    text-decoration: none;
+    color: #8fc2bd;
+}
+
+.home-link a:hover {
+    opacity: 1;
+}
 h2 {
-    color: #a5cedf;
+    color: #8db6c7;
 }
 
 .navbar ul {
@@ -29,32 +66,37 @@ h2 {
 
 .navbar a {
     text-decoration: none;
-    color: #a5cedf;
+    color: #8db6c7;
+}
+
+.navbar a:hover {
+    color: #01015a; 
 }
 
 /* header */
 
 header {
-    background: url(../media/jars.jpg);
+    background: url(../media/creatingChange7.jpeg);
     background-repeat:no-repeat;
     background-size:100%;
     background-position:center;
-    opacity: .75;
+    opacity: .90;
     margin-bottom: 40px;
 }
 
 .header-content {
     color: #eee;
+    margin-top: 100px;
 }
 
 .header-box {
     margin: 50px auto;
     padding: 10px;
-    width: 500px;
+    width: 475px;
     height: 300px;
     background: whitesmoke;
     color: #000;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 5px;
     opacity: 80%;
 }
@@ -64,8 +106,19 @@ h1 {
     color: #a5cedf;
 }
 
+h1 img {
+    margin: 0 auto;
+}
+
 .header-box p {
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8fc2bd;
+}
+
+.slogan1 {
+    text-decoration: 
 }
 
 /* footer */
@@ -110,4 +163,24 @@ h1 {
     /* height: 250px; */
     border: 2px solid black;
     border-radius: 5px;
+}
+
+.img-section {
+    border: 1px solid #8db6c7;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.ig-section {
+    border: 1px solid #8db6c7;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#quote1 {
+    font-style: italic;
+}
+
+#quote2 {
+    font-style: italic;
 }
