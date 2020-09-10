@@ -1,186 +1,133 @@
-
+:root {
+    --primary: #8db6c7;
+    --color2: #8fc2bd;
+    --color3: #a6b3ab;
+    --color4: #6d517b;
+    --color5: #01015a; 
+    --navFontSize: calc(9px + (18 - 9) * ((100vw - 300px) / (1600 - 300)));
+}
 /* COLORS */
-/* 8db6c7 <------- PRIMARY */
-/* 8fc2bd */
-/* a6b3ab */
-/* 6d517b */
-/* 01015a */
 
 /* FONTS */
 /* font-family (for 'august table' futura maxi std book */
 /* font-family (for 'EVENTS' LTC Twentieth Century Medium Small Caps */
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: url(../media/augustTableBackground.png)
-}
-
-/* nav */
-nav {
-    /* padding: 10px 0; */
-
-    width: 100%; 
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: 3;
-    background: url(../media/augustTableBackground.png);
     margin: 0;
-    padding: 10px 0; 
+    background: whitemsoke;
+    background: url(../media/augustTableBackground.png);
 }
 
-.home-link {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    font-size: 48px;
-    /* text-transform: uppercase; */
-    opacity: .50;
+a {
+    color: var(--color4);
+    transition: color 0.5s ease;
 }
 
-.home-link a {
-    text-decoration: none;
-    color: #8fc2bd;
+a:hover {
+    color: var(--primary);
 }
-
-.home-link a:hover {
-    opacity: 1;
-}
-h2 {
-    color: #8db6c7;
-}
-
-.navbar ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: right;
-}
-
-.navbar li {
-    display: inline;
-    margin-right: 20px;
-    font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
-    color: #555;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #8db6c7;
-}
-
-.navbar a:hover {
-    color: #01015a; 
-}
-
-/* header */
 
 header {
-    background: url(../media/creatingChange7.jpeg);
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-position:center;
-    opacity: .90;
-    margin-bottom: 40px;
+    padding: 20px 0;
+    width: 100%;
+    background: url(../media/headerBckgd.png);
+    border-bottom: 2px solid var(--color2);
 }
 
-.header-content {
-    color: #eee;
-    margin-top: 100px;
-}
 
-.header-box {
-    margin: 50px auto;
-    padding: 10px;
-    width: 475px;
-    height: 300px;
-    background: whitesmoke;
-    color: #000;
-    /* border: 2px solid black; */
-    border-radius: 5px;
-    opacity: 80%;
-}
 
 h1 {
-    text-align: center;
-    color: #a5cedf;
+    margin: 0;
 }
 
-h1 img {
+@media (max-width:767px) {
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.header-logo {
+    width: 125px; 
+}
+
+@media (max-width: 575px) {
+    .header-logo {
+        width: 200px;
+    }
+}
+
+.header nav {
+    margin-top: 3%;
+}
+
+@media (max-width: 425px) {
+    .header nav {
+        margin-top: 0;
+    }
+}
+
+.topnav {
+    justify-content: flex-end;
+}
+
+@media (max-width: 575px) {
+    .topnav {
+        justify-content: center;
+    }
+}
+
+
+.topnav-li {
+    font-size: var(--navFontSize);
+    text-transform: capitalize;
+    border-right: 1px solid var(--color4);
+}
+
+.topnav-li:last-child {
+    border: none;
+}
+
+.main {
+    position: relative; 
+    margin-top: 20px;
+}
+
+@media (max-width: 327px) {
+    .topnav-li {
+        border: none;
+        }
+}
+
+.jumbo-sec {
+    height: 50rem;
+    background: var(--color3);
+    background: url(../media/creatingChange1.jpeg);
+    background-size: cover;
+    opacity: 0.50
+}
+
+.jumbo-box {
+    position: absolute;
+    top: 10px;
+    left: 16%;
+}
+
+.jumbotron-logo {
+    display: block;
     margin: 0 auto;
+    width: 500px; 
 }
 
-.header-box p {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #8fc2bd;
-}
 
-.slogan1 {
-    text-decoration: 
-}
-
-/* footer */
-
-.footer-logo {
-    margin: 0 auto;
-    padding: 10px;
-    width: 200px;
-    height: 200px;
-}
-
-.footer-logo img {
-    margin: 0 auto;
-}
-
-.footer-logo p {
-    text-align: center;
-}
-
-.social-media {
-    margin: 0 auto;
-    padding: 10px;
-    width: 200px;
-    height: 200px;
-}
-
-.social-media img { /* will be links */
-    display: inline;
-}
-
-.subscription {
-    margin: 0 auto;
-    padding: 10px;
-    width: 800px;
-    height: 300px;
-}
-
-.subscribe-box {
-    margin: 5px;
-    padding: 10px;
-    width: 600px;
-    /* height: 250px; */
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-.img-section {
-    border: 1px solid #8db6c7;
-    border-radius: 5px;
-    margin: 2px;
-}
-
-.ig-section {
-    border: 1px solid #8db6c7;
-    border-radius: 5px;
-    margin: 2px;
-}
-
-#quote1 {
-    font-style: italic;
-}
-
-#quote2 {
+.slogan {
+    text-align: center; 
+    text-transform: capitalize;
+    color: var(--color2);
+    text-shadow: 1px 1px 1px black;
     font-style: italic;
 }
