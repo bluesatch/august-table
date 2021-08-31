@@ -32,102 +32,40 @@ a:hover {
 }
 
 header {
-    padding: 20px 0;
-    width: 100%;
+    height: 20vh;
     background: url(../media/headerBckgd.png);
     border-bottom: 2px solid var(--color2);
 }
 
-
-
-h1 {
-    margin: 0;
-}
-
-@media (max-width:767px) {
-
-    h1 {
-        text-align: center;
+@media (max-width: 767px) {
+    header {
+        height: 100vh;
     }
 }
 
-.header-logo {
-    width: 125px; 
-}
-
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .header-logo {
-        width: 200px;
+        width: 90vh;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 768px) {
+    .header-logo {
+        width: 155px;
     }
 }
 
-.header nav {
-    margin-top: 3%;
-}
 
-@media (max-width: 425px) {
-    .header nav {
-        margin-top: 0;
-    }
-}
 
 .topnav {
     justify-content: flex-end;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .topnav {
-        justify-content: center;
+        justify-content: space-around;
+        margin-top: 0;
     }
 }
 
-
-.topnav-li {
-    font-size: var(--navFontSize);
-    text-transform: capitalize;
-    border-right: 1px solid var(--color4);
-}
-
-.topnav-li:last-child {
-    border: none;
-}
-
-.main {
-    position: relative; 
-    margin-top: 20px;
-}
-
-@media (max-width: 327px) {
-    .topnav-li {
-        border: none;
-        }
-}
-
-.jumbo-sec {
-    height: 50rem;
-    background: var(--color3);
-    background: url(../media/creatingChange1.jpeg);
-    background-size: cover;
-    opacity: 0.50
-}
-
-.jumbo-box {
-    position: absolute;
-    top: 10px;
-    left: 16%;
-}
-
-.jumbotron-logo {
-    display: block;
-    margin: 0 auto;
-    width: 500px; 
-}
-
-
-.slogan {
-    text-align: center; 
-    text-transform: capitalize;
-    color: var(--color2);
-    text-shadow: 1px 1px 1px black;
-    font-style: italic;
-}
