@@ -4,28 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <title>August Table Events</title>
 </head>
 <body>
     <header class="header" id="header">
-        <nav class="top-nav">
-            <ul class="top-nav1">
-                <li class="nav1-item item">weddings</li>
-                <li class="nav1-item item">events</li>
-                <li class="nav1-item item">services</li>
-            </ul>
-            <ul class="top-nav2">
-                <li class="nav2-item item">services</li>
-                <li class="nav2-item item">about</li>
-                <li class="nav2-item item">contact</li>
-            </ul>
-        </nav>
-        <h1 class="logo">
-            <img src="media/AT.png" alt="logo" class="logo-img img-fluid" width="100">
-            <span class="sr-only">august table events</span>
-        </h1>
+        <div class="container-fluid">
+            <div class="row small-row">
+                <div class="col-6">
+                    <!-- source for hamburger menu -> https://codepen.io/erikterwan/pen/EVzeRP -->
+                    <nav class="hamburger-nav d-none d-sm-block d-md-none">
+                        <div id="menuToggle">
+                            <input type="checkbox" class=""/>
+            
+                            <span class="burger-span"></span>
+                            <span class="burger-span"></span>
+                            <span class="burger-span"></span>
+            
+                            <ul class="burger-list list-group list-group-flush">
+                                <li class="burger-list-item list-group-item">
+                                    <a href="#link" class="list-group-item-action active" aria-current="true">weddings</a>
+                                </li>
+                                <li class="burger-list-item list-group-item">
+                                    <a href="#link" class="list-group-item-action">events</a>
+                                </li>
+                                <li class="burger-list-item list-group-item">
+                                    <a href="#link" class="list-group-item-action">services</a>
+                                </li>
+                                <li class="burger-list-item list-group-item">
+                                    <a href="#link" class="list-group-item-action">about</a>
+                                </li>
+                                <li class="burger-list-item list-group-item">
+                                    <a href="#link" class="list-group-item-action">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- close hamburger-menu -->
+                </div>
+                <div class="col-6">
+                    <h1 class="logo d-none d-sm-block d-md-none text-right">
+                        <img src="media/AT.png" alt="logo" class="logo-img img-fluid" width="100">
+                        <span class="sr-only">august table events</span>
+                    </h1>
+                </div>
+            </div>
+            <!-- close small row -->
+
+            <div class="row large-row">
+                <div class="col-md-4">
+                    <ul class="top-nav1 nav justify-content-around d-sm-none d-md-flex">
+                        <li class="nav1-item item nav-item"><a href="#link" class="nav-link">weddings</a></li>
+                        <li class="nav1-item item nav-item"><a href="#link" class="nav-link">events</a></li>
+                        <li class="nav1-item item nav-item"><a href="#link" class="nav-link">services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="logo d-sm-none d-md-block text-center">
+                        <img src="media/AT.png" alt="logo" class="logo-img img-fluid" width="100">
+                        <span class="sr-only">august table events</span>
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <ul class="top-nav2 nav justify-content-around d-sm-none d-md-flex">
+                        <li class="nav2-item item nav-item"><a href="#link" class="nav-link">services</a></li>
+                        <li class="nav2-item item nav-item"><a href="#link" class="nav-link">about</a></li>
+                        <li class="nav2-item item nav-item"><a href="#link" class="nav-link">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- close large-row -->
+        </div>
+        <!-- close container -->
     </header>
+    
     <main class="main" id="main">
         <section class="section branding-section" id="brandingSection">
             <img src="https://via.placeholder.com/600x350" alt="placeholder img" class="img-fluid" />
@@ -81,6 +134,9 @@
             <img src="media/ate_transparent.png" alt="footer img" class="img-fluid footer-img" width=400>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 </body>
 </html>
