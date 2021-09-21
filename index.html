@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <title>August Table Events</title>
 </head>
 <body>
@@ -16,26 +16,26 @@
                     <!-- source for hamburger menu -> https://codepen.io/erikterwan/pen/EVzeRP -->
                     <nav class="hamburger-nav d-none d-sm-block d-md-none">
                         <div id="menuToggle">
-                            <input type="checkbox" class=""/>
+                            <input type="checkbox" class="burger-checkbox"/>
             
-                            <span class="burger-span"></span>
-                            <span class="burger-span"></span>
-                            <span class="burger-span"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
             
-                            <ul class="burger-list list-group list-group-flush">
-                                <li class="burger-list-item list-group-item">
+                            <ul class="hamburger-list list-group list-group-flush">
+                                <li class="hamburger-item list-group-item">
                                     <a href="#link" class="list-group-item-action active" aria-current="true">weddings</a>
                                 </li>
-                                <li class="burger-list-item list-group-item">
+                                <li class="hamburger-item list-group-item">
                                     <a href="#link" class="list-group-item-action">events</a>
                                 </li>
-                                <li class="burger-list-item list-group-item">
+                                <li class="hamburger-item list-group-item">
                                     <a href="#link" class="list-group-item-action">services</a>
                                 </li>
-                                <li class="burger-list-item list-group-item">
+                                <li class="hamburger-item list-group-item">
                                     <a href="#link" class="list-group-item-action">about</a>
                                 </li>
-                                <li class="burger-list-item list-group-item">
+                                <li class="hamburger-item list-group-item">
                                     <a href="#link" class="list-group-item-action">contact</a>
                                 </li>
                             </ul>
@@ -45,8 +45,10 @@
                 </div>
                 <div class="col-6">
                     <h1 class="logo d-none d-sm-block d-md-none text-right">
-                        <img src="media/AT.png" alt="logo" class="logo-img img-fluid" width="100">
-                        <span class="sr-only">august table events</span>
+                        <a href="index.html" class="logo-link">
+                            <img src="media/AT.png" alt="logo" class="logo-img img-fluid" width="100">
+                            <span class="sr-only">august table events</span>
+                        </a>
                     </h1>
                 </div>
             </div>
@@ -80,12 +82,19 @@
     </header>
     
     <main class="main" id="main">
-        <section class="section branding-section" id="brandingSection">
-            <img src="https://via.placeholder.com/600x350" alt="placeholder img" class="img-fluid" />
-            <img src="https://via.placeholder.com/400x350" alt="placeholder img" class="img-fluid" /> 
+        <section class="section branding-section container-fluid" id="brandingSection">
+            <div class="col-md-8">
+                <img src="https://via.placeholder.com/600x350" alt="placeholder img" class="img-fluid" />
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/400x350" alt="placeholder img" class="img-fluid d-none d-md-inline" /> 
+            </div>
         </section>
+        
         <section class="section title-section" id="titleSection">
-            <h2 class="title">august table events</h2>
+            <h2 class="title text-center">august table 
+                <span class="title-small">events</span>
+            </h2>
             <p class="text title-text" id="titleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore magnam id quaerat! Mollitia nulla voluptatibus enim dolore qui totam sed fugiat eaque? Voluptatum numquam fuga laudantium, iste velit tenetur excepturi odit adipisci, iure consequatur nemo perferendis molestias itaque voluptatibus. Consectetur, praesentium mollitia! Incidunt sunt aliquam laboriosam earum repellat id.</p>
             <img src="https://via.placeholder.com/600x350" alt="placeholder img" class="img-fluid title-sec-img" />
             <img src="media/ate_transparent.png" alt="title-logo" class="img-fluid" width=400>
@@ -95,6 +104,7 @@
                 <button class="submit-button">submit</button>
             </section>
         </section>
+
         <section class="section about-section" id="aboutSection">
             <img src="https://via.placeholder.com/150x150" alt="placeholder img" class="img-fluid about-img" />
             <h2 class="about-header">about cassandra</h2>

@@ -11,6 +11,8 @@
 /* FONTS */
 /* font-family (for 'august table' futura maxi std book */
 /* font-family (for 'EVENTS' LTC Twentieth Century Medium Small Caps */
+
+/* fluid typography: font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -18,8 +20,7 @@
 
 body {
     margin: 0;
-    background: whitemsoke;
-    background: url(../media/augustTableBackground.png);
+    background: whitesmoke;
 }
 
 a {
@@ -33,13 +34,12 @@ a:hover {
 
 header {
     height: 20vh;
-    background: url(../media/headerBckgd.png);
-    border-bottom: 2px solid var(--color2);
+    /* background: url(../media/headerBckgd.png); */
 }
 
 @media (max-width: 767px) {
     header {
-        height: 100vh;
+        height: 12vh;
     }
 }
 
@@ -67,5 +67,126 @@ header {
         justify-content: space-around;
         margin-top: 0;
     }
+
+    /* for hamburger */
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 30px;
+        z-index: 1;
+        -webkit-user-select: none;
+    }
+    
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+    .slice {
+        position: relative;
+        display: block;
+        margin-bottom: 3px;
+        width: 30px;
+        height: 4px;
+        background: var(--color5); 
+        z-index: 1;
+        /* transform-origin */
+        transform-origin: 4px 0px;
+        /* sets the origin for transformations */
+        transition: 
+                transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.35s ease;
+    }
+
+    .slice:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    .slice:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ .slice {
+        transform: 
+            rotate(45deg) 
+            translate(-2px, -1px); 
+    }
+
+    #menuToggle input:checked ~ .slice:nth-last-child(3) {
+        opacity: 0;
+        transform: 
+            rotate(0deg)
+            scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ .slice:nth-last-child(2) {
+        transform: 
+            rotate(-45deg) 
+            translate(0, -1px);
+    }
+
+    .hamburger-list {
+        position: absolute;
+        margin: -80px 0 0 -65px;
+        padding: 40px;
+        padding-top: 80px; 
+        width: 150px;
+        opacity: 0.50;
+        /* stops flickering of text in safari */
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    .hamburger-item {
+        padding: 5px 0;
+        font-size: var(--navFontSize);
+        text-transform: uppercase;
+        background: whitesmoke
+    }
+
+    .hamburger-item a {
+        color: var(--color5);
+    }
+
+    #menuToggle input:checked ~ .hamburger-list {
+        transform: none;
+    }
 }
 
+/* main */
+
+/* branding section */
+
+.branding-section {
+    padding: 50px 0;
+}
+
+/* close branding section */
+
+/* title-section */
+
+.title {
+    font-family: 'futura';
+    font-size: calc(28px + (42 - 28) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.title-small {
+    display: block;
+    /* font-family: 'LTC'; */
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+/* close title section */
+/* close main */
