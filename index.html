@@ -30,7 +30,7 @@
                                     <a href="#link" class="list-group-item-action">events</a>
                                 </li>
                                 <li class="hamburger-item list-group-item">
-                                    <a href="#link" class="list-group-item-action">services</a>
+                                    <a href="#link" class="list-group-item-action">gallery</a>
                                 </li>
                                 <li class="hamburger-item list-group-item">
                                     <a href="#link" class="list-group-item-action">about</a>
@@ -56,11 +56,13 @@
 
             <div class="row large-row">
                 <div class="col-md-4">
-                    <ul class="top-nav1 nav justify-content-around d-sm-none d-md-flex">
-                        <li class="nav1-item item nav-item"><a href="#link" class="nav-link">weddings</a></li>
-                        <li class="nav1-item item nav-item"><a href="#link" class="nav-link">events</a></li>
-                        <li class="nav1-item item nav-item"><a href="#link" class="nav-link">services</a></li>
-                    </ul>
+                    <nav class="large-nav">
+                        <ul class="top-nav1 nav justify-content-around d-sm-none d-md-flex">
+                            <li class="nav1-item item nav-item"><a href="#link" class="nav-link">weddings</a></li>
+                            <li class="nav1-item item nav-item"><a href="#link" class="nav-link">events</a></li>
+                            <li class="nav1-item item nav-item"><a href="#link" class="nav-link">gallery</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="col-md-4">
                     <h1 class="logo d-sm-none d-md-block text-center">
@@ -82,27 +84,41 @@
     </header>
     
     <main class="main" id="main">
-        <section class="section branding-section container-fluid" id="brandingSection">
-            <div class="col-md-8">
-                <img src="https://via.placeholder.com/600x350" alt="placeholder img" class="img-fluid" />
-            </div>
-            <div class="col-md-4">
-                <img src="https://via.placeholder.com/400x350" alt="placeholder img" class="img-fluid d-none d-md-inline" /> 
+        <section class="section branding-section" id="brandingSection">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="https://via.placeholder.com/720x550" alt="placeholder img" class="img-fluid" />
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/420x550" alt="placeholder img" class="img-fluid d-none d-md-block" /> 
+                    </div>
+                </div>
             </div>
         </section>
         
         <section class="section title-section" id="titleSection">
-            <h2 class="title text-center">august table 
-                <span class="title-small">events</span>
-            </h2>
-            <p class="text title-text" id="titleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore magnam id quaerat! Mollitia nulla voluptatibus enim dolore qui totam sed fugiat eaque? Voluptatum numquam fuga laudantium, iste velit tenetur excepturi odit adipisci, iure consequatur nemo perferendis molestias itaque voluptatibus. Consectetur, praesentium mollitia! Incidunt sunt aliquam laboriosam earum repellat id.</p>
-            <img src="https://via.placeholder.com/600x350" alt="placeholder img" class="img-fluid title-sec-img" />
-            <img src="media/ate_transparent.png" alt="title-logo" class="img-fluid" width=400>
-            <section class="mini-section form-section form-section1" id="formSection1">
-                <h3 class="mini-section-header">title here</h3>
-                <p class="text mini-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vitae veniam possimus, id reprehenderit tenetur expedita eius quo incidunt quam.</p>
-                <button class="submit-button">submit</button>
-            </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="title text-center">welcome to august table events!</h2>
+                        <p class="text title-text text-center" id="titleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore magnam id quaerat! Mollitia nulla voluptatibus enim dolore qui totam sed fugiat eaque? Voluptatum numquam fuga laudantium, iste velit tenetur excepturi odit adipisci, iure consequatur nemo perferendis molestias itaque voluptatibus. Consectetur, praesentium mollitia! Incidunt sunt aliquam laboriosam earum repellat id.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="title-mini">
+                            <img src="https://via.placeholder.com/660x350" alt="placeholder img" class="img-fluid title-sec-img" />
+                            <img src="media/ate_transparent.png" alt="title-logo" class="img-fluid title-logo" width=400>
+                            <section class="title-block form-section form-section1" id="formSection1">
+                                <h3 class="mini-section-header">title here</h3>
+                                <p class="text mini-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vitae veniam possimus, id reprehenderit tenetur expedita eius quo incidunt quam.</p>
+                                <button class="submit-button">submit</button>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="section about-section" id="aboutSection">
