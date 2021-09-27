@@ -4,7 +4,7 @@
     --color3: #a6b3ab;
     --color4: #6d517b;
     --color5: #01015a; 
-    --navFontSize: calc(9px + (18 - 9) * ((100vw - 300px) / (1600 - 300)));
+    --navFontSize: calc(9px + (16 - 9) * ((100vw - 300px) / (1600 - 300)));
 }
 /* COLORS */
 
@@ -13,6 +13,8 @@
 /* font-family (for 'EVENTS' LTC Twentieth Century Medium Small Caps */
 
 /* fluid typography: font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+
+/* ***** generic ***** */
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -34,11 +36,12 @@ a:hover {
     text-decoration: none; 
 }
 
-.clear {
-    clear: both;
+section {
+    padding: 20px 0;
+    width: 100%;
 }
 
-/* header */
+/* ***** header ***** */
 
 header {
     padding: 10px 0;
@@ -49,19 +52,15 @@ h1 {
     margin: 0;
 }
 
-.top-nav1, .top-nav2 {
+.top-nav1 {
     font-size: var(--navFontSize);
 }
 
-.nav1-item, .nav2-item {
+.nav1-item {
     text-transform: capitalize;
 }
 
 @media (max-width: 767px) {
-    .topnav {
-        justify-content: space-around;
-        margin-top: 0;
-    }
 
     /* for hamburger */
 
@@ -135,7 +134,7 @@ h1 {
         margin: -80px 0 0 -65px;
         padding: 40px;
         padding-top: 80px; 
-        width: 150px;
+        width: 200px;
         opacity: 0.50;
         /* stops flickering of text in safari */
         -webkit-font-smoothing: antialiased;
@@ -146,7 +145,7 @@ h1 {
 
     .hamburger-item {
         padding: 5px 0;
-        font-size: var(--navFontSize);
+        font-size: 16px;
         text-transform: uppercase;
         background: whitesmoke
     }
@@ -162,17 +161,20 @@ h1 {
 
 /* close header */
 
-/* main */
+/* ***** main ***** */
 
 .branding-section {
     padding: 20px 0;
     /* border: 1px solid blue;  */
 }
 
-.title-section {
-    padding: 20px 0;
-    /* border: 1px solid blue;  */
+.brand-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #ddd;
 }
+
 
 .title {
     color: var(--color4);
@@ -181,38 +183,41 @@ h1 {
 }
 
 .title-text {
-    margin: 10px auto;
-    padding: 5px;
-    width: calc(100% / 1.5);
     color: var(--color5);
 }
 
+@media (min-width: 768px) {
+    .title-text {
+        margin: 10px auto;
+        padding: 5px;
+        width: calc(100% / 1.5);
+    }
+}
+
 .title-mini {
-    position: relative; 
+    /* position: relative;  */
     padding: 10px;
-    height: 75vh;
-    /* border: 1px solid green; */
 }
 
 
 .title-sec-img {
     display: block;
     margin: 0 auto;
+    box-shadow: 5px 5px 5px #ddd;
 }
 
-.title-logo {
+/* .title-logo {
     position: absolute;
-    /* border: 1px solid red; */
-}
+    bottom: -200px;
+    right: -100px;
+} */
 
 .title-block {
-    position: absolute;
-    /* bottom: 110px;
-    left: 50px; */
     padding: 10px;
-    width: 300px;
+    min-width: 260px;
+    width: 25%;
     background: var(--primary);
-    opacity: 0.80;
+    opacity: 0.90;
 }
 
 .mini-section-header {
@@ -238,32 +243,47 @@ h1 {
     
 }
 
+@media (min-width: 412px) and (max-width: 576px) {
+    .title-mini {
+        position: relative;
+    }
+
+    .title-block {
+        position: absolute;
+        bottom: 35%;
+        left: 0;
+    }
+}
+
 @media (min-width: 768px) {
     .title-mini {
         float: right;
     }
 
     .title-block {
+        position: absolute;
+        /* bottom: 40px;
+        left: 0; */
         bottom: 80px;
         left: -100px;
+        
     }
 
     .title-logo {
         bottom: 0;
         right: 0;
     }
-
-
+    
 }
-.about-section {
-    padding: 20px 0;
-    /* border: 1px solid blue; */
-}
+
+/* ******************************** */
 
 .about-img {
     display: block;
     margin: 10px auto;
+    width: 260px;
     border-radius: 50%;
+    box-shadow: 5px 5px 5px #ddd;
 }
 
 
@@ -283,29 +303,35 @@ h1 {
     color: var(--color5);
 }
 
-.inquiry-section {
-    padding: 20px 0;
-    /* border: 1px solid blue; */
-}
-
 .inquiry-mini {
-    position: relative; 
+    /* position: relative;  */
     padding: 10px;
-    height: 75vh;
     /* border: 1px solid green; */
 }
 
+@media (max-width: 576px) {
+    .inquiry-sec-img, .title-sec-img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
 .inquiry-block {
-    position: absolute;
+    /* position: absolute; */
+    bottom: 40px;
     padding: 10px;
-    width: 300px;
+    min-width: 260px;
+    width: 25%;
     background: var(--color2);
     opacity: 0.80;
 }
 
-.inquiry-logo {
+/* .inquiry-logo {
     position: absolute;
-}
+    bottom: 50px;
+    right: -50px;
+} */
 
 .inquiry-block .submit-button {
     display: block;
@@ -360,12 +386,10 @@ footer {
 
 .email-text {
     color: #f5f5f5;
-    font-size: 26px;
+    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.footer-img {
-    border: 1px solid red;
-}
+
 
 @media (min-width: 768px) {
     .footer-img {

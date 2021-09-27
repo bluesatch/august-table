@@ -10,11 +10,11 @@
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row small-row">
                 <div class="col-6">
                     <!-- source for hamburger menu -> https://codepen.io/erikterwan/pen/EVzeRP -->
-                    <nav class="hamburger-nav d-none d-sm-block d-md-none">
+                    <nav class="hamburger-nav d-sm-block d-md-none">
                         <div id="menuToggle">
                             <input type="checkbox" class="burger-checkbox"/>
             
@@ -44,7 +44,7 @@
                     <!-- close hamburger-menu -->
                 </div>
                 <div class="col-6">
-                    <h1 class="logo d-none d-sm-block d-md-none text-right">
+                    <h1 class="logo d-sm-block d-md-none text-right">
                         <a href="index.html" class="logo-link">
                             <img src="media/AT.png" alt="logo" class="logo-img img-fluid" width="100">
                             <span class="sr-only">august table events</span>
@@ -54,28 +54,24 @@
             </div>
             <!-- close small row -->
 
-            <div class="row large-row">
-                <div class="col-md-4">
+            <div class="row">
+                <div class="col">
                     <nav class="large-nav">
-                        <ul class="top-nav1 nav justify-content-around d-sm-none d-md-flex">
+                        <ul class="top-nav1 nav justify-content-between d-none d-md-flex">
                             <li class="nav1-item item nav-item"><a href="#link" class="nav-link">weddings</a></li>
                             <li class="nav1-item item nav-item"><a href="#link" class="nav-link">events</a></li>
                             <li class="nav1-item item nav-item"><a href="#link" class="nav-link">gallery</a></li>
+                            <li class="nav1-item item nav-item">
+                                <h1 class="logo d-none d-md-block text-center">
+                                    <img src="media/AT.png" alt="logo" class="logo-img img-fluid" width="100">
+                                    <span class="sr-only">august table events</span>
+                                </h1>
+                            </li>
+                            <li class="nav1-item item nav-item"><a href="#link" class="nav-link">services</a></li>
+                            <li class="nav1-item item nav-item"><a href="#link" class="nav-link">about</a></li>
+                            <li class="nav1-item item nav-item"><a href="#link" class="nav-link">contact</a></li>
                         </ul>
                     </nav>
-                </div>
-                <div class="col-md-4">
-                    <h1 class="logo d-sm-none d-md-block text-center">
-                        <img src="media/AT.png" alt="logo" class="logo-img img-fluid" width="100">
-                        <span class="sr-only">august table events</span>
-                    </h1>
-                </div>
-                <div class="col-md-4">
-                    <ul class="top-nav2 nav justify-content-around d-sm-none d-md-flex">
-                        <li class="nav2-item item nav-item"><a href="#link" class="nav-link">services</a></li>
-                        <li class="nav2-item item nav-item"><a href="#link" class="nav-link">about</a></li>
-                        <li class="nav2-item item nav-item"><a href="#link" class="nav-link">contact</a></li>
-                    </ul>
                 </div>
             </div>
             <!-- close large-row -->
@@ -84,31 +80,29 @@
     </header>
     
     <main class="main" id="main">
-        <section class="section branding-section" id="brandingSection">
-            <div class="container-fluid">
+        <div class="container">
+            <section class="section branding-section" id="brandingSection">
                 <div class="row">
                     <div class="col-md-8">
-                        <img src="https://via.placeholder.com/720x550" alt="placeholder img" class="img-fluid" />
+                        <img src="media/creatingChange2.jpeg" alt="creating change gala 2" class="img-fluid brand-img brand-img1" />
                     </div>
                     <div class="col-md-4">
-                        <img src="https://via.placeholder.com/420x550" alt="placeholder img" class="img-fluid d-none d-md-block" /> 
+                        <img src="media/creatingChange7.jpeg" alt="creating change gala 1" class="img-fluid brand-img brand-img1 d-none d-md-block" /> 
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section class="section title-section" id="titleSection">
-            <div class="container">
+            </section>
+
+            <section class="section title-section" id="titleSection">
                 <div class="row">
                     <div class="col">
                         <h2 class="title text-center">welcome to august table events!</h2>
-                        <p class="text title-text text-center" id="titleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore magnam id quaerat! Mollitia nulla voluptatibus enim dolore qui totam sed fugiat eaque? Voluptatum numquam fuga laudantium, iste velit tenetur excepturi odit adipisci, iure consequatur nemo perferendis molestias itaque voluptatibus. Consectetur, praesentium mollitia! Incidunt sunt aliquam laboriosam earum repellat id.</p>
+                        <p class="text title-text text-justify text-md-center" id="titleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore magnam id quaerat! Mollitia nulla voluptatibus enim dolore qui totam sed fugiat eaque? Voluptatum numquam fuga laudantium, iste velit tenetur excepturi odit adipisci, iure consequatur nemo perferendis molestias itaque voluptatibus. Consectetur, praesentium mollitia! Incidunt sunt aliquam laboriosam earum repellat id.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col clearfix">
                         <div class="title-mini">
-                            <img src="https://via.placeholder.com/800x410" alt="placeholder img" class="img-fluid title-sec-img" />
+                            <img src="media/creatingChange5.jpeg" alt="creating change 5 img" class="img-fluid title-sec-img" />
                             <img src="media/ate_transparent.png" alt="title-logo" class="img-fluid title-logo" width=350>
                             <section class="title-block form-section form-section1" id="formSection1">
                                 <h3 class="mini-section-header">title here</h3>
@@ -119,29 +113,26 @@
                         <!-- <div class="clear"></div> -->
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section about-section" id="aboutSection">
-            <div class="container">
+            <section class="section about-section" id="aboutSection">
                 <div class="row">
                     <div class="col-md-4 clearfix">
-                        <img src="https://via.placeholder.com/150x150" alt="placeholder img" class="img-fluid about-img" />
+                        <img src="media/cbrownat.JPG" alt="headshot" class="img-fluid about-img" />
                         <!-- <div class="clear"></div> -->
                     </div>
                     <div class="col-md-8">
                         <h2 class="about-header">about cassandra</h2>
-                        <p class="text about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error necessitatibus consectetur porro dicta corporis reprehenderit iusto illo! Ad aspernatur quae nihil ut fugit error optio nemo corrupti, architecto consequuntur. Impedit error vero similique? Dignissimos, quod, provident assumenda culpa molestiae in eum quos, eius unde qui esse id inventore totam vero consequatur quibusdam magnam sequi cumque aliquam numquam. Eaque, nostrum ex.</p>
+                        <p class="text about-text text-justify text-md-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error necessitatibus consectetur porro dicta corporis reprehenderit iusto illo! Ad aspernatur quae nihil ut fugit error optio nemo corrupti, architecto consequuntur. Impedit error vero similique? Dignissimos, quod, provident assumenda culpa molestiae in eum quos, eius unde qui esse id inventore totam vero consequatur quibusdam magnam sequi cumque aliquam numquam. Eaque, nostrum ex.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section inquiry-section" id="inquirySection">
-            <div class="container">
+            </section>
+
+            <section class="section inquiry-section" id="inquirySection">
                 <div class="row">
                     <div class="col">
                         <div class="inquiry-mini">
-                            <img src="https://via.placeholder.com/800x410" alt="placeholder img" class="img-fluid inquiry-sec-img" />
+                            <img src="media/creatingChange7.jpeg" alt="creating change 7" class="img-fluid inquiry-sec-img" />
                             <img src="media/ate_transparent.png" alt="title-logo" class="img-fluid inquiry-logo" width=350>
                             <section class="inquiry-block form-section form-section1" id="formSection1">
                                 <h3 class="mini-section-header">title here</h3>
@@ -151,10 +142,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section see-more-section" id="seeMore">
-            <div class="container">
+            </section>
+
+            <section class="section see-more-section" id="seeMore">
                 <div class="row">
                     <div class="col">
                         <h2 class="see-more-header">see more!</h2>
@@ -163,46 +153,47 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col">
                         <section class="mini-section insta-section" id="instaSection">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img src="https://via.placeholder.com/250x150" alt="placeholder img" class="img-fluid insta-img rounded" />
+                                    <img src="media/insta.jpeg" alt="insta 1" class="img-fluid insta-img rounded" />
                                 </div>
                                 <div class="col-sm-4">
-                                    <img src="https://via.placeholder.com/250x150" alt="placeholder img" class="img-fluid insta-img rounded" />
+                                    <img src="media/insta2.jpeg" alt="insta 2" class="img-fluid insta-img rounded" />
                                 </div>
                                 <div class="col-sm-4">
-                                    <img src="https://via.placeholder.com/250x150" alt="placeholder img" class="img-fluid insta-img rounded" />
+                                    <img src="media/insta3.jpeg" alt="insta 3" class="img-fluid insta-img rounded" />
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row d-none d-md-block">
                                 <div class="col-sm-4">
-                                    <img src="https://via.placeholder.com/250x150" alt="placeholder img" class="img-fluid insta-img rounded" />
+                                    <img src="media/insta4.jpeg" alt="insta 4" class="img-fluid insta-img rounded" />
                                 </div>
                                 <div class="col-sm-4">
-                                    <img src="https://via.placeholder.com/250x150" alt="placeholder img" class="img-fluid insta-img rounded" />
+                                    <img src="media/insta5.jpeg" alt="insta 5" class="img-fluid insta-img rounded" />
                                 </div>
                                 <div class="col-sm-4">
-                                    <img src="https://via.placeholder.com/250x150" alt="placeholder img" class="img-fluid insta-img rounded" />
+                                    <img src="media/insta6.jpeg" alt="insta 6" class="img-fluid insta-img rounded" />
                                 </div>
                             </div>
                         </section>
-
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
+
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="text footer-text email-text">
+                    <p class="text footer-text email-text text-center text-md-left">
                         <a href="mailto:augusttableevents@gmail.com">augusttableevents@gmail.com</a>
                     </p>
-                    <div class="social-div">
+                    <div class="social-div d-flex justify-content-around">
                         <!-- will be icons -->
                         <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid social-img" />
                         <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid social-img" />
