@@ -175,6 +175,8 @@ h1 {
     box-shadow: 5px 5px 5px #ddd;
 }
 
+/* ****** title section *******/
+
 
 .title {
     color: var(--color4);
@@ -206,18 +208,62 @@ h1 {
     box-shadow: 5px 5px 5px #ddd;
 }
 
-/* .title-logo {
-    position: absolute;
-    bottom: -200px;
-    right: -100px;
-} */
 
 .title-block {
     padding: 10px;
-    min-width: 260px;
+    min-width: 250px;
     width: 25%;
+    font-size: 16px;
     background: var(--primary);
     opacity: 0.90;
+    border-radius: 5px; 
+}
+
+@media (max-width: 575px) {
+    .title-block {
+        margin: 20px auto;
+        width: 96%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .title-block {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .title-block {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .title-block {
+        position: absolute;
+        right: 50px;
+        bottom: -100px;
+    }
+}
+
+.title-logo {
+    width: 275px;
+}
+
+@media (min-width: 768px) {
+    .title-logo {
+        width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .title-logo {
+        position: absolute;
+        left: 0;
+        bottom: -200px;
+    }
 }
 
 .mini-section-header {
@@ -243,40 +289,19 @@ h1 {
     
 }
 
-@media (min-width: 412px) and (max-width: 576px) {
-    .title-mini {
-        position: relative;
-    }
-
-    .title-block {
-        position: absolute;
-        bottom: 35%;
-        left: 0;
-    }
-}
 
 @media (min-width: 768px) {
     .title-mini {
         float: right;
     }
-
-    .title-block {
-        position: absolute;
-        /* bottom: 40px;
-        left: 0; */
-        bottom: 80px;
-        left: -100px;
-        
-    }
-
-    .title-logo {
-        bottom: 0;
-        right: 0;
-    }
     
 }
 
 /* ******************************** */
+
+.about-section {
+    padding: 100px 0;
+}
 
 .about-img {
     display: block;
@@ -303,6 +328,14 @@ h1 {
     color: var(--color5);
 }
 
+/* ***** inquiry section ***** */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .inquiry-section {
+        padding: 100px 0;
+    }
+}
+
 .inquiry-mini {
     /* position: relative;  */
     padding: 10px;
@@ -318,20 +351,27 @@ h1 {
 }
 
 .inquiry-block {
-    /* position: absolute; */
-    bottom: 40px;
     padding: 10px;
-    min-width: 260px;
+    min-width: 250px;
     width: 25%;
     background: var(--color2);
     opacity: 0.80;
+    border-radius: 5px; 
 }
 
-/* .inquiry-logo {
-    position: absolute;
-    bottom: 50px;
-    right: -50px;
-} */
+@media (max-width: 575px) {
+    .inquiry-block {
+        margin: 20px auto;
+        width: 96%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .inquiry-block {
+        float: right; 
+    }
+}
+
 
 .inquiry-block .submit-button {
     display: block;
@@ -345,15 +385,33 @@ h1 {
     border-radius: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .inquiry-block {
+        position: absolute;
         bottom:80px;
         right: 100px;
     }
 
     .inquiry-logo {
-        bottom: 0;
+        position: absolute;
+        bottom: -200px;
         left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .inquiry-block, .inquiry-logo {
+        position: absolute;
+    }
+
+    .inquiry-block {
+        bottom: 80px;
+        right: 210px;
+    }
+
+    .inquiry-logo {
+        left: 0;
+        bottom: -190px;
     }
 }
 
@@ -389,6 +447,12 @@ footer {
     font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
+@media (max-width: 767px) {
+    .footer-img {
+        display: block;
+        margin: 0 auto;
+    }
+}
 
 
 @media (min-width: 768px) {
